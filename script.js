@@ -464,7 +464,7 @@ contactForm?.addEventListener('submit', async (e) => {
   }
 
   try {
-    const resp = await fetch('http://localhost:5000/api/contact', {
+    const resp = await fetch('https://my-backend-app-vam9.onrender.com/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, subject, message })
