@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 <head>
@@ -331,3 +332,338 @@
   <script src="script.js" defer></script>
 </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D'wyngs — Creative Agency & Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p9fH6f6k6k2v3y3Jxg6y6Hq0Jkq7sL7gX0s1q+6o5Yw8b2xE0J9z/1p3V1f2R6F+nBv6e9G6k5Zt2z7XbL6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="D'wyngs — luxury creative agency & portfolio" />
+</head>
+<body>
+  <!-- Particles & decorative canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Custom glowing cursor -->
+  <div id="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+  <img src="images/logo.png" alt="D'wyngs" class="logo">
+  <span>D'wyngs</span>
+</a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="#services">Services <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu" aria-label="Services submenu">
+              <li><a href="#branding">Branding</a></li>
+              <li><a href="#digital">Digital</a></li>
+              <li><a href="#strategy">Strategy</a></li>
+            </ul>
+          </li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn-outline" href="#contact">Work with us</a>
+        <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero" aria-label="Hero">
+    <div class="container hero-inner">
+      <div class="hero-left reveal">
+        <h1 class="hero-title">
+          <span class="typewrite" data-words='["We craft luxury brands.","We design futuristic experiences.","We launch ideas that fly."]' data-loop="true"></span>
+        </h1>
+        <p class="hero-sub">D'wyngs is a full-service creative agency blending luxury aesthetics with futuristic design and strategic thinking.</p>
+
+        <div class="hero-ctas">
+          <a href="#portfolio" class="btn-gradient">Our Work</a>
+          <a href="#contact" class="btn-outline">Let's Talk</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong class="count" data-target="128">0</strong><span>Projects</span></div>
+          <div><strong class="count" data-target="24">0</strong><span>Countries</span></div>
+          <div><strong class="count" data-target="12">0</strong><span>Awards</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal" aria-hidden="false">
+        <!-- Right-side creative professional image with decorative overlays -->
+        <div class="hero-visual">
+         <img src="images/hero.jpg" alt="Creative Agency" class="hero-img">
+          <!-- decorative glowing shapes -->
+          <div class="glow-orb orb-1"></div>
+          <div class="glow-orb orb-2"></div>
+          <div class="glow-ring"></div>
+        </div>
+
+        <!-- Optional small feature cards stacked on the visual (attractive extras) -->
+        <div class="visual-cards">
+          <div class="vcard vcard-1">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>Premium Craft</strong>
+              <small>High-end design systems</small>
+            </div>
+          </div>
+          <div class="vcard vcard-2">
+            <i class="fa-solid fa-rocket"></i>
+            <div>
+              <strong>Fast Launch</strong>
+              <small>Prototypes in days</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section">
+    <div class="container about-inner reveal">
+      <div class="about-media">
+        <img src="images/about.jpg" alt="D'wyngs team or studio" class="about-img">
+      </div>
+      <div class="about-content">
+        <h2>About <span>D'wyngs</span></h2>
+        <p>We are an interdisciplinary creative studio focused on brand strategy, visual identity, and immersive digital experiences. Our work sits at the intersection of luxury and innovation.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-gem"></i> Luxury brand identity</li>
+          <li><i class="fa-solid fa-rocket"></i> Product & digital design</li>
+          <li><i class="fa-solid fa-lightbulb"></i> Strategy & storytelling</li>
+          <li><i class="fa-solid fa-camera-retro"></i> Production & photography</li>
+        </ul>
+        <a class="btn-outline" href="#services">Discover Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services section">
+    <div class="container section-head reveal">
+      <h3>Services</h3>
+      <p>Curated services to elevate brands and craft unforgettable user experiences.</p>
+    </div>
+
+    <div class="container services-grid">
+      <article class="service-card reveal">
+        <div class="icon"><i class="fa-solid fa-feather"></i></div>
+        <h4>Brand Identity</h4>
+        <p>Crafting bespoke visual systems and narratives for premium brands.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon"><i class="fa-solid fa-paintbrush"></i></div>
+        <h4>Digital Design</h4>
+        <p>Elegant UI & UX, prototypes, and product design with meticulous detail.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon"><i class="fa-solid fa-code"></i></div>
+        <h4>Front-end Development</h4>
+        <p>Pixel-perfect, fast, and accessible experiences for modern web.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+        <h4>Creative Direction</h4>
+        <p>Campaign strategy, storyboarding and premium content production.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h4>Strategy</h4>
+        <p>Brand positioning, product-market fit and growth strategy.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
+        <h4>Photography</h4>
+        <p>High-end visual assets and post-production for polished presentation.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container section-head reveal">
+      <h3>Portfolio</h3>
+      <p>Selected projects — a mix of identity, web, and immersive experiences.</p>
+    </div>
+
+    <div class="container portfolio-grid" id="portfolioGrid">
+      <figure class="portfolio-item reveal">
+        <img src="images/visiting-card1.jpg" alt="Visiting Card" data-title="Visiting Card — Brand Identity" data-desc="Luxury identity & launch campaign. Clarya Events crafts unforgettable weddings and celebrations with expert planning, décor, and media services—all in one place."/>
+        <figcaption>
+          <h4>Project One</h4>
+          <span>Brand Identity</span>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio-item reveal">
+        <img src="https://source.unsplash.com/featured/800x800/?webdesign,product&sig=12" alt="Project 2" data-title="Project Two — Website" data-desc="Futuristic product site."/>
+        <figcaption>
+          <h4>Project Two</h4>
+          <span>Website</span>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio-item reveal">
+        <img src="https://source.unsplash.com/featured/800x800/?packaging,design&sig=13" alt="Project 3" data-title="Project Three — Packaging" data-desc="Artisanal packaging design."/>
+        <figcaption>
+          <h4>Project Three</h4>
+          <span>Packaging</span>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio-item reveal">
+        <img src="https://source.unsplash.com/featured/800x800/?campaign,photoshoot&sig=14" alt="Project 4" data-title="Project Four — Campaign" data-desc="Social & experiential campaign."/>
+        <figcaption>
+          <h4>Project Four</h4>
+          <span>Campaign</span>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio-item reveal">
+        <img src="https://source.unsplash.com/featured/800x800/?ui,design&sig=15" alt="Project 5" data-title="Project Five — UI/UX" data-desc="Product & UX work."/>
+        <figcaption>
+          <h4>Project Five</h4>
+          <span>UI/UX</span>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio-item reveal">
+        <img src="https://source.unsplash.com/featured/800x800/?photography,studio&sig=16" alt="Project 6" data-title="Project Six — Photography" data-desc="Editorial photography and retouching."/>
+        <figcaption>
+          <h4>Project Six</h4>
+          <span>Photography</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Lightbox for portfolio -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightboxImage" src="" alt="" />
+      <div class="lightbox-meta">
+        <h4 id="lightboxTitle"></h4>
+        <p id="lightboxDesc"></p>
+      </div>
+      <button id="lightboxPrev" class="nav-btn" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+      <button id="lightboxNext" class="nav-btn" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container section-head reveal">
+      <h3>Testimonials</h3>
+      <p>What clients say about working with us.</p>
+    </div>
+
+    <div class="container testimonials-wrap reveal" id="testimonialsWrap">
+      <div class="testimonial active">
+        <p>"D'wyngs translated our vision into a stunning identity. The process was effortless and the results exceeded expectations."</p>
+        <div class="meta"><strong>Mary Ellis</strong><span>CEO, Aurea</span></div>
+      </div>
+
+      <div class="testimonial">
+        <p>"Exceptional design & attention to detail — the product site doubled conversions in two months."</p>
+        <div class="meta"><strong>Daniel Park</strong><span>Founder, Luminary</span></div>
+      </div>
+
+      <div class="testimonial">
+        <p>"A world-class creative partner — strategic, creative and always a step ahead."</p>
+        <div class="meta"><strong>Asha Menon</strong><span>CMO, Opal</span></div>
+      </div>
+
+      <div class="testimonials-controls">
+        <button id="prevTest"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextTest"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section">
+    <div class="container section-head reveal">
+      <h3>Contact</h3>
+      <p>Interested in working together? Send us a message or reach out directly.</p>
+    </div>
+
+    <div class="container contact-grid reveal">
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+        </div>
+        <input type="text" id="subject" name="subject" placeholder="Subject" />
+        <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+        <button type="submit" class="btn-gradient">Send Message</button>
+        <p class="form-note">Or email directly: <a id="directEmail" href="mailto:d.wyngs@gmail.com">d.wyngs@gmail.com</a></p>
+      </form>
+
+      <aside class="contact-details">
+        <div class="card">
+          <h4>Studio</h4>
+          <p>London • Remote</p>
+        </div>
+        <div class="card">
+          <h4>Email</h4>
+          <p><a id="asideEmail" href="mailto:d.wyngs@gmail.com">d.wyngs@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h4>Follow</h4>
+          <p class="socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> D'wyngs. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="scrollTop" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+>>>>>>> 6a1edfd756e21304f5ffc60a6aed9ba385e2112f
